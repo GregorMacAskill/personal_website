@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<head>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+  <title>Gregor MacAskill</title>
+  <meta name="description" content="I'm an aeronautical engineering student who loves to work on interesting projects">  
+  <meta name="author" content="Gregor MacAskill">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+  
+
+   <!-- Script
+   =================================================== -->
+  <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+  =================================================== -->
+  <link rel="shortcut icon" href="images/favicon.png" >
+
+</head>
+
+<body class="homepage">
+
+   <div id="preloader"> 
+     <div id="status">
+         <img src="images/loader.gif" height="60" width="60" alt="">
+         <div class="loader">Loading...</div>
+      </div>
+   </div>
+   
+
+   <!-- Header
+   =================================================== -->
+   <header class="main-header" id="main-header">
+
+    <div class="row header-inner">
+
+        <div class="logo">
+          <a href="index.html#home">
+           <strong>Gregor MacAskill</strong>
+          </a>
+        </div>
+
+        <nav id="nav-wrap">         
+           
+           <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+            <span class='menu-text'>Show Menu</span>
+            <span class="menu-icon"></span>
+           </a>
+          <a class="mobile-btn" href="#" title="Hide navigation">
+            <span class='menu-text'>Hide Menu</span>
+            <span class="menu-icon"></span>
+          </a>         
+
+           <ul id="nav" class="nav">
+              <li class="current"><a href="index.html#home">Home</a></li>
+             <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#projects">Projects</a></li>
+              <li><a href="index.html#experience">Experience</a></li>           
+              <li><a href="index.html#hobbies">Hobbies</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              
+
+  <!--  <li id="main">
+              <label class="switch">
+              <input type="checkbox" onclick="darkLight()" id="checkBox" >
+              <span class="slider"></span>  -->
+
+	<!--  <li id="main">
+              <label class="switch">
+              <input type="checkbox" onclick="darkLight()" id="checkBox" >
+              <span class="slider"></span>	-->
+
+      </label>
+           </ul> 
+
+        </nav> <!-- /nav-wrap -->       
+
+     </div> <!-- /header-inner -->
+
+   </header> 
+
+<!-- home
+   =================================================== -->
+   <section id="home2">  
+      
+    <div class="row home-content">
+
+      <div class="twelve columns flex-container">
+
+         <div id="home-slider" class="flexslider">
+
+           <ul class="slides">
+
+             <!-- Slide -->
+             <li>
+               <div class="flex-caption">
+                <h1 style="text-align:center">Receiving Satellite Images</h1> 
+                                <h2 style="text-align:center">Using a software-defined radio and home-made antenna to view satellite imagery.</h2>                       
+              </div>  
+                                  
+             </li>
+           </ul>
+                   
+                   
+                    
+                 
+
+         </div> <!-- .flexslider -->           
+
+        </div> <!-- .flex-container -->      
+
+    </div> <!-- .home-content -->    
+
+   </section> <!-- #home -->
+
+
+<!-- Gameplay Section
+   ================================================== -->
+   <section id="about">
+
+   
+
+      <!-- team
+    =================================================== -->
+   
+
+        <div class="row team section-head">
+
+        <div class="twelve columns">
+
+             <h1>Background</h1>
+
+             <hr />
+          </div>
+        
+        </div>
+
+        <div class="row about-content">
+
+          <div class="twelve columns">
+
+             <div id="team-wrapper" class="bgrid mob-bgrid-whole group">
+
+                <div class="bgrid member">
+
+                   
+
+                   <p align="" style="color:black">I was first made aware that anyone with the right kit and a bit of know-how can pull images from satellites through <a href="https://www.youtube.com/watch?v=cjClTnZ4Xh4" target="_blank"><strong>this</strong></a> video. I was stunned by the quality of images that can be obtained with a rudimentary antenna and a cheap software-defined radio (SDR), so simply had to try it myself! Below is a brief overview of the progression and outcome of this project. </p>
+          
+      <div class="row team section-head">
+
+        <div class="twelve columns">
+            
+             <h1>The Plan</h1>
+             
+             <hr />
+          </div>
+        
+        </div>   
+        <p style="color:black">The steps required to complete this project are surprisingly straightforward. They can be summarised in a high-level form as follows:</p>
+          <ol>
+            <li>Construct an antenna.</li>
+            <li>Connect the antenna to a computer via an SDR.</li>
+            <li>Run SDR software on computer. </li>
+            <li>Check for next satellite pass and prepare antenna for RF capture.</li>
+            <li>Decode satellite data using decoding software.</li>
+        </ol>
+
+        <p style="color:black">The setup required to fulfil these steps is shown in the schematic below. Note that it is the NOAA-18 and NOAA-19 satellites that are being targeted. The more modern GOES satellites provide higher resolution imagery, but also require more bandwidth and thus a more sophisticated antenna design to take advantage of this.
+          <img src="images/projects/satellite-images/satellite_images_schematic (5).png"></p>        
+      <div class="row team section-head">
+
+        <div class="twelve columns">
+            <br>
+             <h1>The Antenna</h1>
+
+             <hr />
+          </div>
+        
+        </div>     
+                   <p style="color:black">The V-Dipole is one of the simplest types of antenna, yet it is capable of providing good performance if constructed and set up correctly. It consists of two horizontally mounted metallic rods/wires arranged in a 120&deg; "vee" shape. For this project, copper wire was used as it was readily available via stripping spare cables. Copper is also an excellent conductor, meaning that little RF energy (and thus data) will be lost between the receiver and the decoder.  The image below shows the design upon which the antenna is based. The 53.4 cm leg length corresponds to the quarter wavelength of the NOAA weather satellites, which trasmit at 137 Hz. 
+                   
+                   <img src="images/projects/satellite-images/antenna_design.png">
+                  <br>
+                  Since the satellites broadcast in circular polarisation, there will be a loss of approximately 3 dB in this design as it utilises linear polarisation; however, this should not be too detrimental to the overall results. Below is an image showing how the copper wires were connected to the 75 Ohm coax cable using a choc block connector.
+                  <br>
+                  <img src="images/projects/satellite-images/choc_block.jpg">
+
+
+                  <div class="row team section-head">
+
+        <div class="twelve columns">
+            <br>
+             <h1>The Software-Defined Radio</h1>
+
+             <hr />
+          </div>
+        
+        </div>     
+        <p style="color:black">The SDR used for this project was the NESDR SMArTee v2, pictured below. </p>
+                   <br>
+                   
+                   <img src="images/projects/satellite-images/nesdr.jpg">
+                   <br>
+        <p style="color:black">In order to connect the coax cable to the SDR, an F-connector female to SMA male adaptor had to be fitted. This first required the coax cable to be trimmed and tidied. </p>
+                
+                   <img src="images/projects/satellite-images/coax.png">
+
+                   <br>
+
+                  <div class="row team section-head">
+
+        <div class="twelve columns">
+            <br>
+             <h1>Results</h1>
+
+             <hr />
+          </div>
+        
+        </div>  
+                   <p style="color:black">The final step in the assembly process is to connect the coax cable to the SDR. Using the SDRSharp software, terrestrial radio signals were immediately picked up from Clyde 1! </p>
+                   <br>
+                   <img src="images/projects/satellite-images/radio_signals.jpg">
+                   <br>
+                   <p style="color:black">I checked the n2yo.com website for the next NOAA pass, prepared the antenna, and patiently waited...
+                   <br>
+                   <img src="images/projects/satellite-images/waiting.jpg">
+                   <br>
+                   As the NOAA-18 satellite passed overhead, signals were being picked up in the SDRSharp software, which was a promising sign. As the satellite travelled further away, the signal weakened and eventually fizzled out, meaning it was now time to decode. WXtoImg was used to decode the data, and an image began slowly materialising, layer by layer.  
+                   <br>
+                   <img src="images/projects/satellite-images/noisy_image.jpg">
+                   <br>
+                   This first image is very noisy. The outlines that can be seen are simply superimposed in the post-processing of the data, and so no actual information is conveyed by this image. This was a little disappointing, but it was still thrilling to see the satellite signal being received in real time!. Some adjustments were made in an attempt to generate better images. Firstly, the antenna was modified to have two horizontal pieces of wood to which the copper wires could attach to keep them fixed. Secondly, the antenna was held at a higher elevation so that there would be fewer obstructions that could interfere with the signal.
+                   <br>
+                   <img src="images/projects/satellite-images/final_setup.jpg">
+                   <br>
+                   Again, I waited for the satellite to pass and watched as data was downlinked through my makeshift antenna. The following image was staggering...
+                   <br>
+                   <img src="images/projects/satellite-images/good_image.jpg">
+                   <br>
+                   Clouds and land features are clearly visible
+                 <div class="row team section-head">
+
+        <div class="twelve columns">
+            <br>
+             <h1>Future Improvements & Development</h1>
+             <p style="color:black">One great thing about this project is that there's lots of room for improvment and further refinement. Perhaps most notably, different antenna variants such as helical and discone can be tested. The antenna was undoubtedly what limited my attempt at this project the most, but I was still able to show the surprising power of the humble V-dipole. Another limitation I faced was the altitude at which the antenna was placed. Performing the downlink in a higher, more remote location would have provided better results. Finally, once the NOAA satellites have been exhausted, the project could be adapted to cater to higher resolution satellites, such as GOES. Overall, this project was remarkably successful and I learned a lot about communications, especially regarding satellites.</p>
+             <hr />
+          </div>
+        
+        </div>  
+                
+
+             </div> <!-- /twelve -->
+
+           </div> <!-- /team-wrapper -->
+
+         </div> <!-- /row -->
+
+              
+
+   </section> <!-- /about -->
+
+  <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row" align="center">   
+       <img src="images/projects/satellite-images/favicon.png" style="width:50px;height:50px;" align="middle">    
+         <p class="copyright">&copy; Copyright <script type="text/JavaScript">
+document.write(new Date().getFullYear());
+</script> Gregor MacAskill.</p>        
+        <!--
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#home"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
+         </div>
+          -->
+      </div> <!-- /row -->
+
+   </footer> <!-- /footer -->
+
+
+
+   <!-- Java Script
+   ================================================== -->
+   <!--Commenting this out cos I think it's why my site isn't secure (at least according to https://www.whynopadlock.com  
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   -->
+   <script src="js/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>   
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/backstretch.js"></script> 
+   <script src="js/waypoints.js"></script>  
+   <script src="js/main.js"></script>
+  
+
+  </body>
+</html>
